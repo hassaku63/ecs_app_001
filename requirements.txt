@@ -1,0 +1,4 @@
+awscli==1.11.107
+boto3==1.4.4
+bottle==0.12.13
+requests==2.18.1
