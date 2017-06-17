@@ -13,9 +13,13 @@ headers = {"Content-Type": "application/x-www-form-urlencoded"}
 param = dict(text="test massage")
 param = "payload={dumped_dict}".format(dumped_dict=json.dumps(param))
 
-@route('/hello')
-def index():
+@route("/hello")
+def hello():
   resp = requests.post(WEBHOOK_URL, data=param, headers=headers)
   return "<b>hello, Amazon ECS</b>!"
+
+@route("/")
+def index():
+  return "<p>hello</p>"
 
 run(host="0.0.0.0", port=8080)
