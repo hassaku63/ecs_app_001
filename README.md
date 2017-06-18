@@ -2,7 +2,7 @@
 Simple web app
 
 # はじめに
-動作検証に利用するdocker iamgeの元になるセットを書いたものです。
+動作検証に利用するdocker imageの元になるセットを書いたものです。
 このレポジトリ自体はECSと無関係なので、あしからず。
 
 http://blog.serverworks.co.jp/tech/2017/06/18/deploying_app_to_ecs/
