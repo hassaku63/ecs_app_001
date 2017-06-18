@@ -6,16 +6,18 @@ Simple web app
 このレポジトリ自体はECSと無関係なので、あしからず。
 
 http://blog.serverworks.co.jp/tech/2017/06/18/deploying_app_to_ecs/
+
 ※2017/06/19時点では非公開
 
 # ローカルで実行
 `git clone` した後、dockerインストール済みのマシンで以下を実行します。
+
 実行するユーザーには予めdocker実行権限を持つグループを付与してください。
 
 ```bash
 cd ecs_app_001
-docker build -t ecsapp .
-docker run -d --name=app001 -p 80:8080 -e SLACK_WEBHOOK_URL=<YOUR_SLACK_WEBHOOK_URL> ecsapp
+docker build -t ecs_app_001 .
+docker run -d --name=app -p 80:8080 -e SLACK_WEBHOOK_URL=<YOUR_SLACK_WEBHOOK_URL> ecs_app_001
 ```
 
 # 注意事項
