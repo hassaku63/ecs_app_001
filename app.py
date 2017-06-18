@@ -16,10 +16,10 @@ param = "payload={dumped_dict}".format(dumped_dict=json.dumps(param))
 @route("/hello")
 def hello():
   resp = requests.post(WEBHOOK_URL, data=param, headers=headers)
-  return "<b>hello, Amazon ECS</b>!"
+  return "<b>Incoming webhook kicked.</b>!"
 
 @route("/")
 def index():
-  return "<p>hello</p>"
+  return "<p>Hello world</p>"
 
 run(host="0.0.0.0", port=8080)
