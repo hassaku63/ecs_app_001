@@ -3,7 +3,7 @@ Simple web app
 
 # はじめに
 ECS検証用に簡単なSlack連携のアプリケーションを書きました。
-/hello にアクセスがあるとSlackにポストを実行するだけの作りになってます。
+/hello にアクセスがあると、Incoming Webhookを利用してSlackにポストを投げるだけの作りになってます。
 
 # ローカル実行
 `git clone` した後、dockerインストール済みのマシンで以下を実行します。
